@@ -48,10 +48,9 @@ metadata:
   namespace: svc-master
 spec:
   rules:
-  - host: "test.nnorman.tech"
+  - host: "test-dotnet.nnorman.tech"
     http:
       paths:
-      - path: /dotnet
-        backend:
+      - backend:
           serviceName: dotnetapp
           servicePort: 80
